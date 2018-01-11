@@ -1,1 +1,1 @@
-# A simple Express base todo list web app using CRUD and MongoDB
+# A simple Express based todo list web app using CRUD and MongoDB
