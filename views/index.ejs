@@ -1,0 +1,24 @@
+<% include partials/head %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<% include form %>
+		</div>
+		<div class="col-md-8 my-sm-5 my-md-3">
+			<div class="list-group">
+				<ul>
+					<% todoList.forEach((todo) => { %>
+						<li class="list-group-item list-group-item-action">
+							<h3><%= todo.text %></h3>
+							<p class="lead"><%= todo.body %></p>
+							<button type="button" class="delete btn btn-outline-danger btn-block" data-id="<%= todo._id %>">Delete</button>
+							<button type="button" class="edit btn btn-outline-info btn-block" data-id="<%= todo._id %>">Edit</button>
+						</li>
+					<% }) %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<% include partials/footer %>

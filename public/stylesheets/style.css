@@ -1,0 +1,38 @@
+body {
+  padding: 10px;
+  font-style: 'Exo', sans-serif;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	font-weight: 200;
+}
+
+h4 {
+	font-family: 'Khula', sans-serif;
+}
+
+h3 {
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.list-group-item {
+	outline: none;
+	border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	h3 {
+		font-size: 30px;
+	}
+
+	ul {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+}
